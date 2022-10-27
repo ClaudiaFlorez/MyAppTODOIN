@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bogotainfo1"
+    tools:context=".bogotainfo1">
+
+    <Button
+        android:id="@+id/btndeatras7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668B"
+
+        android:text="ATRÁS"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/villavoinfo3"
+        android:layout_width="412dp"
+        android:layout_height="356dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F0F87F"
+        android:capitalize="none"
+        android:text="Bogotá es la Capital de Colombia y se encuentra ubicada en el Centro del país. Está dentro de la zona de confluencia intertropical, produciendo dos épocas de lluvia; en la primera mitad del año en los meses de marzo, abril y mayo y en la segunda en los meses de septiembre, octubre y noviembre. La orientación general de la ciudad, está determinada porque sus carreras son orientadas de sur a norte y sus calles de oriente a occidente. Tanto las calles como las carreras usualmente están numeradas así que son raras las que tienen nombre propios o de personajes.\n \nSI PLANEAS VISITAR BOGOTA DEBERÍAS SABER...\nDentro de la ciudad podrás encontrar muchos planes para hacer desde visitas a museos hasta tours gastronómicos por lo cual se garantiza a sus visitantes que algo de su interés encontraran allí, pero si le interesa conocer lugares para visitar cercanos a Bogotá, a continuación le damos algunas recomendaciones:\n \nLAGUNA DE GUATAVITA Y EMBALSE DE TOMINÉ: \nDistancia desde Bogotá: 72,5 km"
+        android:textAlignment="textStart"
+        android:textColor="#090908"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoapp" />
+
+    <Button
+        android:id="@+id/btnmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="664dp"
+        android:text="más"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

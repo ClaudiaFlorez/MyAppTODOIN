@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popayaninfo1"
+    tools:context=".popayaninfo1">
+
+
+    <TextView
+        android:id="@+id/popayaninfo"
+        android:layout_width="414dp"
+        android:layout_height="366dp"
+        android:layout_marginStart="2dp"
+        android:background="#F0F87F"
+        android:capitalize="none"
+        android:text=" A solo tres horas en automóvil desde Cali, Popayán es uno los destinos turísticos más relevantes del sur occidente colombiano. Es llamada comúnmente “la ciudad blanca” por el color de las casas que adornan su arquitectura colonial. La arquitectura religiosa es parte de los atractivos turísticos de Popayán.\nLigada a su historia, la gastronomía de Popayán tiene una amplia tradición, producto de la fusión  de la cultura española, indígena y afrodescendiente.\n \nSI DESEA VIAJAR A POPAYAN DEBE SABER...\n \nPopayán se encuentra ubicada a 143 km (88 millas) de Cali. El tiempo estimado de viaje es de aproximadamente 2h 40 minutos en automóvil y pasa a través de Puerto Tejada, Jamundí, Santander de Quilichao.\n \nEn este trayecto los viajeros deben pasar dos peajes: un vehículo de Categoría I pagará $9,000 (2USD) en el peaje de Villa Rica y $9,000 (2USD) en el peaje de Tunia. "
+        android:textAlignment="textStart"
+        android:textColor="#090908"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btndeatras4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668B"
+
+        android:text="ATRÁS"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoapp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

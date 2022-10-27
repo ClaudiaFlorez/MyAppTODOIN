@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/villavicencioinfo1"
+    tools:context=".villavoinfo1">
+
+
+    <Button
+        android:id="@+id/btndeatras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668B"
+
+        android:text="ATRÁS"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoapp" />
+
+    <TextView
+        android:id="@+id/villavoinfo1"
+        android:layout_width="414dp"
+        android:layout_height="366dp"
+        android:layout_marginStart="2dp"
+        android:background="#F0F87F"
+        android:capitalize="none"
+        android:text="Villavicencio es la capital del departamento del Meta, conocida por muchos como la «Puerta del Llano», está situada al noroccidente del departamento del Meta, en el pie del monte de la cordillera oriental en la margen izquierda del Río Guatiquía, es la ciudad más grande de los llanos orientales y la primera fuente comercial y de abastecimiento para la región.\n \nSI DESEA VIAJAR A VILLAVICENCIO DEBE SABER...\n \nVillavicencio se encuentra ubicada a 115 km (71 millas) de la capital del país en ruta. El tiempo estimado de viaje es de aproximadamente 2h 30 minutos en automóvil y pasa a través de Guayabetal, Quetame, Cáqueza, Chipaque.  \nEn este trayecto los viajeros deben pasar tres peajes: un vehículo de Categoría I pagará  $14,300 (4USD) en el peaje de Boquerón I y II, $12,200 (3USD) en el Naranjal y $20,100 (5USD) en el de Pipiral.  En total, estos carros deben pagar $46.600 (12USD) en su viaje. El consumo de combustible es de aproximadamente 2 galones (9 litros)."
+        android:textAlignment="textStart"
+        android:textColor="#090908"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
