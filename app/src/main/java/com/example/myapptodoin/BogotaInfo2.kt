@@ -3,26 +3,24 @@ package com.example.myapptodoin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myapptodoin.databinding.ActivityBogotainfo1Binding
-import com.example.myapptodoin.databinding.ActivityBogotainfo2Binding
+import com.example.myapptodoin.databinding.ActivityBogotaInfo1Binding
+import com.example.myapptodoin.databinding.ActivityBogotaInfo2Binding
 
 class BogotaInfo2 : AppCompatActivity() {
-    private lateinit var binding: ActivityBogotainfo2Binding
+    private lateinit var binding: ActivityBogotaInfo2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
-        //setTheme((R.style.Theme_MyAppTODOIN))
-        //Thread.sleep(2000)
         super.onCreate(savedInstanceState)
-        binding = ActivityBogotainfo2Binding.inflate(layoutInflater)
+        binding = ActivityBogotaInfo2Binding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        binding.btndeatras6.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+        binding.btnmapabogota.setOnClickListener {
+            startActivity(Intent(this, BogotaRegistro::class.java))
         }
-        binding.btnbtnplanesbogota.setOnClickListener {
+        binding.btnplanesbogota.setOnClickListener {
             startActivity(Intent(this, TodoInBogota::class.java))
         }
-        binding.btnmapabogota.setOnClickListener {
-            startActivity(Intent(this, MapaBogota::class.java))
+        binding.btndeatras6.setOnClickListener {
+            startActivity(Intent(this, BogotaInfo1::class.java))
         }
     }
 }

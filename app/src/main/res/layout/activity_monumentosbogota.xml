@@ -8,7 +8,25 @@
     tools:context=".MonumentosBogota">
 
     <Button
-        android:id="@+id/atrás"
+        android:id="@+id/btnplanea"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="683dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="Planea y disfruta Aquí"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnatras2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="683dp"
