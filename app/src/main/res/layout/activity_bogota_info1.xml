@@ -52,7 +52,7 @@
         app:srcCompat="@drawable/logoapp" />
 
     <Button
-        android:id="@+id/mas1"
+        android:id="@+id/btnmas1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
