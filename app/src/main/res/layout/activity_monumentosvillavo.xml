@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/monumentosvillavo"
-    tools:context=".monumentosvillavo">
+    tools:context=".MonumentosVillavo">
 
     <TextView
         android:id="@+id/monumentoalcoleotxt"
@@ -150,11 +150,15 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="270dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Planea y Disfruta Aquí"
-        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -163,8 +167,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
         android:text="VILLAVO"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

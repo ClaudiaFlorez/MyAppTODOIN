@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pexels_1006121"
-    tools:context=".todoinsomos">
+    tools:context=".TodoInSomos">
 
 
     <Button
@@ -14,11 +14,14 @@
         android:layout_height="183dp"
         android:layout_marginBottom="300dp"
         android:autoText="false"
+        android:backgroundTint="#29668b"
         android:capitalize="none"
+        android:fontFamily="@font/balsamiq_sans"
         android:text=" TODOIN es la aplicación que te permite planear y disfrutar tu viaje con las diferentes opciones que ofrecen los prestadores de servicios turísticos. También te ofrece la posibilidad de hacerlo a tu aire llevándote por la web a la información que necesitas.  	                                                Planea y Disfruta con TODOIN."
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,13 +39,16 @@
         app:srcCompat="@drawable/logoapp" />
 
     <Button
-        android:id="@+id/inicio1"
+        android:id="@+id/btninicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
         android:text="INICIO"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

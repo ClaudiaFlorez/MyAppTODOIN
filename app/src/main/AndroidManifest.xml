@@ -13,6 +13,41 @@
         android:theme="@style/Theme.MyAppTODOIN"
         tools:targetApi="31">
         <activity
+            android:name=".Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TodoinPlanearYdisfrutar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TodoinExplorarRutas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TodoinRegistro"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Bogota5"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".splashlottie"
             android:exported="false">
             <meta-data
@@ -27,112 +62,112 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".popayanregistro"
+            android:name=".PopayanRegistro"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".todoinregistrarse"
+            android:name=".TodoInRegistrarse"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".todoinlogin"
+            android:name=".TodoInLogin"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".mapabogota"
+            android:name=".MapaBogota"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".mapavillavo"
+            android:name=".MapaVillavo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".mapapopayan"
+            android:name=".MapaPopayan"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".popayaninfo2"
+            android:name=".PopayanInfo2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".popayaninfo1"
+            android:name=".PopayanInfo1"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".villavoinfo2"
+            android:name=".VillavoInfo2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".villavoinfo1"
+            android:name=".VillavoInfo1"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".todoinvillavo"
+            android:name=".TodoInVillavo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".villavoregistro"
+            android:name=".VillavoRegistro"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".toursvillavo"
+            android:name=".Toursvillavo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".todoinsomos"
+            android:name=".TodoInSomos"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".monumentosvillavo"
+            android:name=".MonumentosVillavo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".caminatasvillavo"
+            android:name=".CaminatasVillavo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -146,7 +181,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".campingvillavo"
+            android:name=".CampingVillavo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -160,42 +195,42 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".toursbogota"
+            android:name=".ToursBogota"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".todoinbogota"
+            android:name=".TodoInBogota"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".monumentosbogota"
+            android:name=".MonumentosBogota"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".campingbogota"
+            android:name=".CampingBogota"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".caminatasbogota"
+            android:name=".CaminatasBogota"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".bogotaregistro"
+            android:name=".BogotaRegistro"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

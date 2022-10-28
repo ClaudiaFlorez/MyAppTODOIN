@@ -16,30 +16,31 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.btnbogota.setOnClickListener {
-            startActivity(Intent(this, bogotaregistro::class.java))
-            //Toast.makeText(this, "click en el botón Bogota", Toast.LENGTH_LONG).show()
+            startActivity(Intent(this, BogotaRegistro::class.java))
+            Toast.makeText(this, "click en el botón Bogota", Toast.LENGTH_LONG).show()
 
         }
         binding.btnvillavo.setOnClickListener {
-            startActivity(Intent(this, villavoregistro::class.java))
+            startActivity(Intent(this, VillavoRegistro::class.java))
             }
 
         binding.btnpopayan.setOnClickListener{
-            startActivity(Intent(this,popayanregistro::class.java))
+            startActivity(Intent(this,PopayanRegistro::class.java))
         }
 
         binding.btnsomos.setOnClickListener {
-            startActivity(Intent(this, todoinsomos::class.java))
+            startActivity(Intent(this, TodoInSomos::class.java))
             }
         binding.btningresar.setOnClickListener {
-            startActivity(Intent(this, todoinlogin::class.java))
+            startActivity(Intent(this, Login::class.java))
 }
         binding.btnregistrarse.setOnClickListener {
-            startActivity(Intent(this, todoinregistrarse::class.java))
+            startActivity(Intent(this, TodoInRegistrarse::class.java))
         /*}
         binding.btnsalir.setOnClickListener {
             startActivity(Intent(this, villavoregistro::class.java))*/
 
         }
+        }
     }
-}
+

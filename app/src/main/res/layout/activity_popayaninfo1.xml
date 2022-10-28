@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/popayaninfo1"
-    tools:context=".popayaninfo1">
+    tools:context=".PopayanInfo1">
 
 
     <TextView
@@ -33,8 +33,10 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="ATRÁS"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -50,4 +52,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logoapp" />
+
+    <Button
+        android:id="@+id/mas7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668B"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="MáS"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btndeatras4"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

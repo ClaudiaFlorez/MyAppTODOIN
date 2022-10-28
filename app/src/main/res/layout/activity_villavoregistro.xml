@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/villavoregistro"
-    tools:context=".villavoregistro">
+    tools:context=".VillavoRegistro">
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,10 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
         android:text="INICIO"
         android:textColorHighlight="#F44336"
         android:textColorLink="#F44336"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
@@ -57,10 +60,14 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Planea y Disfruta Aquí"
-        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

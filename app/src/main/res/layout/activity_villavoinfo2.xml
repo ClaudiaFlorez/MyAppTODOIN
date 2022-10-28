@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/villavicencioinfo1"
-    tools:context=".villavoinfo2">
+    tools:context=".VillavoInfo2">
 
 
     <TextView
@@ -29,13 +29,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="230dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="92dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Mapa de Villavicencio"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -46,8 +49,10 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="ATRÁS"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,10 +66,13 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Planes para Hacer en Villavicencio"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView

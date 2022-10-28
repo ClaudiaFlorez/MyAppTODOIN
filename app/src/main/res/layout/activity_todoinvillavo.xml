@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/villavicencio"
-    tools:context=".todoinvillavo">
+    tools:context=".TodoInVillavo">
 
 
     <Button
@@ -17,8 +17,10 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Tours"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -31,8 +33,10 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="INICIO"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -46,11 +50,13 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Camping"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -59,14 +65,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="sans-serif"
         android:text="Caminata"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -76,14 +84,14 @@
 
         android:text="VILLAVICENCIO"
         android:textColor="#29668B"
-        android:textSize="28sp"
+        android:textSize="34sp"
+        android:textStyle="bold"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintVertical_bias="0.303" />
 
     <ImageView
         android:id="@+id/logo"
@@ -98,18 +106,18 @@
         app:srcCompat="@drawable/logoapp" />
 
     <Button
-        android:id="@+id/btnmonumentosvillavo"
+        android:id="@+id/monumentos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="290dp"
-        android:layout_marginBottom="70dp"
-        android:backgroundTint="#29668B"
-
-        android:text="Monumentos"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="612dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="monumentos"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btncaminatavillavo"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

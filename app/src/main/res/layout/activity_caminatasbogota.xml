@@ -4,6 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".caminatasbogota">
+    android:background="@drawable/caminatasbogota"
+    tools:context=".CaminatasBogota">
 
+    <Button
+        android:id="@+id/planea3"
+        android:layout_width="141dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="Planea y Disfruta Aquí"
+        android:textAllCaps="false"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/planea2"
+        android:layout_width="141dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="Planea y Disfruta Aquí"
+        android:textAllCaps="false"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/planea1"
+        android:layout_width="141dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="236dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="Planea y Disfruta Aquí"
+        android:textAllCaps="false"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/planea"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="688dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="Planea y disfruta Aquí"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bogota"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="688dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="bogotá"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/planea"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

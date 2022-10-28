@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/caminatasvillabo"
-    tools:context=".caminatasvillavo">
+    tools:context=".CaminatasVillavo">
 
 
     <Button
@@ -15,6 +15,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="270dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
         android:text="Planea y Disfruta Aquí"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#29668b"
         android:text="VILLAVO"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +43,9 @@
         android:layout_marginStart="275dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="328dp"
+        android:backgroundTint="#29668b"
         android:text="Planea y Disfruta Aquí"
+        android:textAllCaps="false"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +59,9 @@
         android:layout_marginStart="275dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="230dp"
+        android:backgroundTint="#29668b"
         android:text="Planea y Disfruta Aquí"
+        android:textAllCaps="false"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +75,9 @@
         android:layout_marginStart="275dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="103dp"
+        android:backgroundTint="#29668b"
         android:text="Planea y Disfruta Aquí"
+        android:textAllCaps="false"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

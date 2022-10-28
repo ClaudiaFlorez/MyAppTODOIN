@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/popayaninfo1"
-    tools:context=".popayaninfo2">
+    tools:context=".PopayanInfo2">
 
 
     <TextView
@@ -15,27 +15,13 @@
         android:layout_marginStart="2dp"
         android:background="#F0F87F"
         android:capitalize="none"
-        android:text=" En total, estos carros deben pagar $18.000 (4USD) en su viaje. El consumo de combustible es de aproximadamente 2 galones (9 litros).\n \nEl vuelo entre Bogotá (BOG) y Popayán (PPN) dura alrededor de 80-90 min y cubre una distancia de alrededor de 370 km. Los servicios son operados por Avianca, Easyfly.  Hay 17 vuelos directos a la semana en esta ruta."
+        android:text="    En total, estos carros deben pagar $18.000 (4USD) en su viaje.    El consumo de combustible es de aproximadamente 2 galones (9 litros).\n \nEl vuelo entre Bogotá (BOG) y Popayán (PPN) dura alrededor de 80-90 min y cubre una distancia de alrededor de 370 km. Los servicios son operados por Avianca, Easyfly.  Hay 17 vuelos directos a la semana en esta ruta."
         android:textAlignment="textStart"
         android:textColor="#090908"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnmapapopayan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="270dp"
-        android:layout_marginBottom="70dp"
-        android:backgroundTint="#29668B"
-
-        android:text="Mapa de Popayán"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -46,8 +32,10 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="ATRÁS"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,10 +49,13 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans"
         android:text="Planes para Hacer en Popayán"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -78,4 +69,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logoapp" />
+
+    <Button
+        android:id="@+id/planes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="232dp"
+        android:backgroundTint="#29668b"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="MAPA DE POPAYAN"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
