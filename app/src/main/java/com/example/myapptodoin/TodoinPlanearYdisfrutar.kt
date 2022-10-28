@@ -18,18 +18,17 @@ class TodoinPlanearYdisfrutar : AppCompatActivity() {
 
         binding.btnvillavo1.setOnClickListener {
             startActivity(Intent(this, VillavoInfo1::class.java))
-        }/*
+        }
         binding.btnbogota1.setOnClickListener {
             startActivity(Intent(this, BogotaInfo1::class.java))
-        }*/
+        }
 
         binding.btnpopayan1.setOnClickListener {
             startActivity(Intent(this, PopayanInfo1::class.java))
         }
-        binding.btnbogota1.setOnClickListener {
-            startActivity(Intent(this, BogotaInfo2::class.java))
+
         }
 
     }
-}
+
 

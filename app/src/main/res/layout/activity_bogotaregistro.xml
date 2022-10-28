@@ -31,6 +31,7 @@
         android:backgroundTint="#29668b"
         android:fontFamily="@font/balsamiq_sans"
         android:text="@string/planea_y_disfruta_aqu1"
+        android:textAllCaps="false"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

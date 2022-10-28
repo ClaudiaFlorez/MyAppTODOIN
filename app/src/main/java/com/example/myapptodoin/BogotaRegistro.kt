@@ -3,7 +3,6 @@ package com.example.myapptodoin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myapptodoin.databinding.ActivityBogotainfo1Binding
 import com.example.myapptodoin.databinding.ActivityBogotaregistroBinding
 
 class BogotaRegistro : AppCompatActivity() {

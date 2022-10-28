@@ -13,6 +13,20 @@
         android:theme="@style/Theme.MyAppTODOIN"
         tools:targetApi="31">
         <activity
+            android:name=".BogotaInfo2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BogotaInfo1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Login"
             android:exported="false">
             <meta-data
