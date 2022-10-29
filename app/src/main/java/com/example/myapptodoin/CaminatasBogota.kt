@@ -13,7 +13,7 @@ class CaminatasBogota : AppCompatActivity() {
         binding = ActivityCaminatasbogotaBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        binding.bogota.setOnClickListener {
+        binding.btnbogota2.setOnClickListener {
             startActivity(Intent(this,TodoInBogota::class.java))
     }
 
