@@ -21,18 +21,20 @@
         app:srcCompat="@drawable/logoapp"
         tools:visibility="visible" />
 
-    <TextView
+    <com.codesgood.views.JustifiedTextView
         android:id="@+id/infovillavo"
-        android:layout_width="406dp"
+        android:layout_width="380dp"
         android:layout_height="313dp"
+        android:layout_marginBottom="88dp"
         android:background="#F0F87F"
         android:fontFamily="@font/balsamiq_sans"
-        android:text="VILLAVICENCIO                                                                                                               Villavicencio es una ciudad del centro de Colombia, donde los Andes se juntan con la planicie de Los Llanos, al sureste de Bogotá. Es conocida por la danza del joropo y el deporte vaquero del coleo. La plaza principal, Parque de los Libertadores, tiene fuentes refrescantes y en ella se ubica la Catedral de Nuestra Señora del Carmen del siglo XIX. El Parque de los Fundadores tiene jardines y una altísima escultura. Al este, el parque Las Malocas recrea la vida en una aldea del valle con un rancho de ganado.                                                                                                                                      Villavicencio es un centro ganadero, una zona en la que abundan los vaqueros. Puedes pasar una o dos noches en un rancho antes de recorrer el placentero paseo hasta las populares llanuras verdes de Los Llanos. Si te apetece quedarte más tiempo, Villavicencio ofrece montones de actividades al aire libre y ecoturismo.  Durante el transcurso del año, la temperatura generalmente varía de 20 °C a 32 °C y rara vez baja a menos de 16 °C o sube a más de 34 °C. En base a la puntuación de turismo, la mejor época del año para visitar Villavicencio para actividades de tiempo caluroso es desde mediados de junio hasta finales de septiembre. "
+        android:text="VILLAVICENCIO\n Villavicencio es una ciudad del centro de Colombia, donde los Andes se juntan con la planicie de Los Llanos, al sureste de Bogotá. Es conocida por la danza del joropo y el deporte vaquero del coleo. La plaza principal, Parque de los Libertadores, tiene fuentes refrescantes y en ella se ubica la Catedral de Nuestra Señora del Carmen del siglo XIX. El Parque de los Fundadores tiene jardines y una altísima escultura. Al este, el parque Las Malocas recrea la vida en una aldea del valle con un rancho de ganado.\n \n Villavicencio es un centro ganadero, una zona en la que abundan los vaqueros. Puedes pasar una o dos noches en un rancho antes de recorrer el placentero paseo hasta las populares llanuras verdes de Los Llanos. Si te apetece quedarte más tiempo, Villavicencio ofrece montones de actividades al aire libre y ecoturismo.\n \n Durante el transcurso del año, la temperatura generalmente varía de 20 °C a 32 °C y rara vez baja a menos de 16 °C o sube a más de 34 °C. En base a la puntuación de turismo, la mejor época del año para visitar Villavicencio para actividades de tiempo caluroso es desde mediados de junio hasta finales de septiembre. "
         android:textAlignment="textStart"
         android:textColor="#090909"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -42,7 +44,7 @@
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668b"
-        android:fontFamily="@font/balsamiq_sans"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="INICIO"
         android:textColorHighlight="#F44336"
         android:textColorLink="#F44336"
@@ -61,7 +63,7 @@
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668b"
-        android:fontFamily="@font/balsamiq_sans"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Planea y Disfruta Aquí"
         android:textAllCaps="false"
         android:textSize="12sp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/monumentosvillavo"
+    android:background="@drawable/monumentos_villavo"
     tools:context=".MonumentosVillavo">
 
     <TextView
@@ -17,6 +17,7 @@
         android:textColor="#090908"
         android:textSize="8sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/monumentoalosfundadoresfoto" />
 
@@ -25,13 +26,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="282dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="16dp"
         android:text="Monumento al Cenit"
         android:textColor="#090908"
         android:textSize="8sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/monumentoalosfundadoresfoto" />
 
@@ -40,91 +41,91 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="282dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="16dp"
         android:text="Monumento al Joropo"
         android:textColor="#090908"
         android:textSize="8sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/monumentoalosfundadoresfoto" />
 
     <ImageView
         android:id="@+id/monumentoalcenitfoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="280dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentoalcenit" />
 
     <ImageView
         android:id="@+id/monumentoaljoropofoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="280dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentoaljoropo" />
 
     <ImageView
         android:id="@+id/monumentoalfolclorllanero"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentofolclorllanero" />
 
     <ImageView
         android:id="@+id/monumentoaloscentaurosfoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentoaloscentauros" />
 
     <ImageView
         android:id="@+id/monumentoalosfundadoresfoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="280dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="220dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentoalosfundadores" />
 
     <ImageView
         android:id="@+id/monumentoalacruzdelareconciliacionfoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="280dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentocruzdelareconciliacion" />
 
@@ -135,7 +136,7 @@
         android:layout_marginBottom="5dp"
         android:background="#F0F87F"
         android:fontFamily="@font/balsamiq_sans"
-        android:text="                                         Si lo que buscas es una opción a costo &quot;cero&quot;:"
+        android:text="\n                                        Si lo que buscas es una opción a costo &quot;cero&quot;:"
         android:textColor="#090808"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -176,11 +177,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <com.codesgood.views.JustifiedTextView
         android:id="@+id/infomonumentosvillavo"
         android:layout_width="400dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginBottom="424dp"
         android:background="#F0F87F"
         android:fontFamily="@font/balsamiq_sans"
         android:text="Aquí encontrarás diferentes opciones para visitar lo más emblemático de la ciudad entre monumentos y museos o sitios de interés a los que usted puede desplazarse por su cuenta sin depender de guías y administrando su propio tiempo.  "
@@ -195,15 +196,17 @@
         android:id="@+id/monumentosvillavo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="MONUMENTOS VILLAVO"
         android:textColor="#29668B"
         android:textSize="28sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293" />
+        app:layout_constraintVertical_bias="0.287" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -219,24 +222,24 @@
 
     <ImageView
         android:id="@+id/monumentosenderohaciaelfuturofoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="220dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentounsenderohaciaelfuturo" />
 
     <ImageView
         android:id="@+id/monumentoalcoleofoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="280dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="220dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -245,14 +248,14 @@
 
     <ImageView
         android:id="@+id/monumentocristoreyfoto"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
+        android:layout_width="89dp"
+        android:layout_height="79dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="280dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toTopOf="@+id/planeaydisfrutainfo4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/monumentocristorey" />
 
@@ -274,7 +277,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="105dp"
         android:layout_marginEnd="39dp"
         android:text="Monumento a Cristo Rey"
         android:textColor="#090908"
@@ -289,13 +292,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="39dp"
         android:text="Monumento Cruz de la Reconciliación"
         android:textColor="#090908"
         android:textSize="8sp"
         app:layout_constraintEnd_toStartOf="@+id/senderohaciaelfuturotxt"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/monumentoalosfundadoresfoto" />
 
@@ -315,7 +318,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="104dp"
         android:text="Monumento a los Centauros"
         android:textColor="#090908"
         android:textSize="8sp"
@@ -327,7 +330,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="208dp"
         android:text="Monumento al Folclor Llanero"
         android:textColor="#090908"
         android:textSize="8sp"
