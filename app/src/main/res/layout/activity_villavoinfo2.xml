@@ -8,13 +8,15 @@
     tools:context=".VillavoInfo2">
 
 
-    <TextView
+    <com.codesgood.views.JustifiedTextView
         android:id="@+id/villavoinfo2"
-        android:layout_width="414dp"
-        android:layout_height="366dp"
-        android:layout_marginStart="2dp"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:background="#F0F87F"
         android:capitalize="none"
+        android:fontFamily="@font/balsamiq_sans"
         android:text="El vuelo entre Bogotá (BOG) y Villavicencio (VVC) dura alrededor de 52 min y cubre una distancia de alrededor de 83 km. Los servicios son operados por Avianca. Por lo general, los vuelos son 6 aunque los horarios de los fines de semana y los días festivos pueden variar, por lo que hay que comprobarlo con antelación."
         android:textAlignment="textStart"
         android:textColor="#090908"

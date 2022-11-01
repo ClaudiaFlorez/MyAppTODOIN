@@ -20,5 +20,4 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/planet" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

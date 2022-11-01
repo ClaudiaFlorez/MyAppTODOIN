@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/villavotodoin"
-    tools:context=".TodoInVillavo">
 
+    android:background="@drawable/todoinvillavo1"
 
     <Button
-        android:id="@+id/btnmtoursvillavo"
+        android:id="@+id/btntoursvillavo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="290dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="270dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
@@ -82,6 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="VILLAVICENCIO"
         android:textColor="#29668B"
         android:textSize="34sp"
@@ -106,18 +106,18 @@
         app:srcCompat="@drawable/logoapp" />
 
     <Button
-        android:id="@+id/monumentos"
+        android:id="@+id/btnmonumentos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="612dp"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="#29668b"
         android:fontFamily="@font/balsamiq_sans"
         android:text="monumentos"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btncaminatavillavo"
         app:layout_constraintHorizontal_bias="0.611"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

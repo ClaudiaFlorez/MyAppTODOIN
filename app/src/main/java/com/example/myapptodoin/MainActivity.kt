@@ -36,9 +36,7 @@ class MainActivity : AppCompatActivity() {
 }
         binding.btnregistrarse.setOnClickListener {
             startActivity(Intent(this, TodoInRegistrarse::class.java))
-        /*}
-        binding.btnsalir.setOnClickListener {
-            startActivity(Intent(this, villavoregistro::class.java))*/
+
 
         }
         }
