@@ -16,7 +16,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
-        android:fontFamily="@font/balsamiq_sans"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="ATRÁS"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
         android:backgroundTint="#29668b"
-        android:fontFamily="@font/balsamiq_sans"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="más"
         android:textSize="12sp"
         android:textStyle="bold"
