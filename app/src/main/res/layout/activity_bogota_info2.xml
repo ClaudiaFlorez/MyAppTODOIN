@@ -12,7 +12,6 @@
         android:id="@+id/txtbogotainfo2"
         android:layout_width="407dp"
         android:layout_height="357dp"
-        android:layout_marginStart="2dp"
         android:background="#F0F87F"
         android:capitalize="none"
         android:fontFamily="@font/balsamiq_sans"
@@ -33,6 +32,7 @@
         android:layout_marginBottom="70dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Mapa de Bogotá"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,6 +47,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="ATRÁS"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,6 +63,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Planes para Hacer en Bogotá"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"

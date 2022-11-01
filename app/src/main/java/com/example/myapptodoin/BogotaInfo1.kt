@@ -15,7 +15,9 @@ class BogotaInfo1 : AppCompatActivity() {
         binding.btnmas1.setOnClickListener {
             startActivity(Intent(this, BogotaInfo2::class.java))
         }
+        binding.btndeatras7.setOnClickListener {
+            startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
+        }
     }
 }
-
 

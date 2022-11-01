@@ -14,7 +14,7 @@ class BogotaInfo2 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.btnmapabogota.setOnClickListener {
-            startActivity(Intent(this, BogotaRegistro::class.java))
+            startActivity(Intent(this, MapaBogota::class.java))
         }
         binding.btnplanesbogota.setOnClickListener {
             startActivity(Intent(this, TodoInBogota::class.java))
