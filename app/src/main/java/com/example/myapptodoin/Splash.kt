@@ -7,17 +7,26 @@ import android.os.Handler
 import android.os.Looper
 import com.example.myapptodoin.databinding.ActivitySplashBinding
 
+import kotlinx.coroutines.delay
+
 class Splash : AppCompatActivity() {
     private lateinit var binding:ActivitySplashBinding
-    private lateinit var handler: Handler
+    private lateinit var handler:Handler
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivitySplashBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)
-        handler=Handler(Looper.myLooper()!!)
+
+        handler= Handler(Looper.myLooper()!!)
         handler.postDelayed({
-           startActivity(Intent(this,MainActivity::class.java))
-        },4000)
+            startActivity(Intent(this,MainActivity::class.java))
+        }, 4000)
+
     }
 }
+
+
+
+

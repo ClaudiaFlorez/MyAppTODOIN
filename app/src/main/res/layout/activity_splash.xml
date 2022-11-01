@@ -6,26 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Splash">
 
-   <com.airbnb.lottie.LottieAnimationView
+    <com.airbnb.lottie.LottieAnimationView
 
-       android:id="@+id/animationworld"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="#4BC87F"
-       android:backgroundTint="#6EAFF7"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:lottie_autoPlay="true"
-       app:lottie_loop="true"
-
-
-       app:lottie_rawRes="@raw/planet" />
-
-
-
-
-
-
+        android:id="@+id/animationworld"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4BC87F"
+        android:backgroundTint="#6EAFF7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/planet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

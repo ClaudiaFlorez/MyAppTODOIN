@@ -80,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bogota"
+        android:id="@+id/btnbogota2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginTop="688dp"
