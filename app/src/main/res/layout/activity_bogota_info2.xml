@@ -4,25 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bogotainfo1"
+    android:background="@drawable/bogotainfo2"
     tools:context=".BogotaInfo2">
 
-
-    <com.codesgood.views.JustifiedTextView
-        android:id="@+id/txtbogotainfo2"
-        android:layout_width="407dp"
-        android:layout_height="357dp"
-        android:background="#F0F87F"
-        android:capitalize="none"
-        android:fontFamily="@font/balsamiq_sans"
-        android:text=" Tiempo de viaje: 2 horas. \nTipo de transporte: particular o flota\n \nVILLA DE LEYVA, BOYACÁ: Distancia desde Bogotá: 159 km Tiempo de viaje: 3 horas. Tipo de transporte: particular o flota.LA CHORRERA DE CHOACHÍ, CUNDINAMARCA \nDistancia desde Bogotá: 51 km \nTiempo de viaje: 2 horas. \nTipo de transporte: particular o flota\n \nPARQUE NACIONAL NATURAL CHINGAZA \nDistancia desde Bogotá: 47 km \nTiempo de viaje: 2.5 horas. \nTipo de transporte: particular o flota."
-        android:textAlignment="textStart"
-        android:textColor="#090908"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnmapabogota"

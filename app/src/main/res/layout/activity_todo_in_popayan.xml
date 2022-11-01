@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/todoinvillavo1"
-tools:context=".TodoInVillavo">
+    android:background="@drawable/todoin_popayan"
+    tools:context=".TodoInPopayan">
+
     <Button
-        android:id="@+id/btntoursvillavo"
+        android:id="@+id/btntourspopa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="270dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="290dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
-
-        android:fontFamily="@font/balsamiq_sans"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Tours"
-        android:textSize="12sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,74 +28,65 @@ tools:context=".TodoInVillavo">
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
-
-        android:fontFamily="@font/balsamiq_sans"
-        android:text="INICIO"
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/balsamiq_sans_bold"
+        android:text="ATRÁS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btncampingvillavo"
+        android:id="@+id/btncpopa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
-
-        android:fontFamily="@font/balsamiq_sans"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Camping"
-        android:textSize="12sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btncaminatavillavo"
+        android:id="@+id/btncamipopa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="70dp"
         android:backgroundTint="#29668B"
-
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Caminata"
-        android:textSize="12sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/ciudad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="@font/balsamiq_sans_bold"
-        android:text="VILLAVICENCIO"
+        android:text="POPAYÁN"
         android:textColor="#29668B"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:textSize="48sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintVertical_bias="0.278"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,18 +94,17 @@ tools:context=".TodoInVillavo">
         app:srcCompat="@drawable/logoapp" />
 
     <Button
-        android:id="@+id/btnmonumentos"
+        android:id="@+id/btnmonupo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:backgroundTint="#29668b"
-        android:fontFamily="@font/balsamiq_sans"
-        android:text="monumentos"
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#29668B"
+        android:fontFamily="@font/balsamiq_sans_bold"
+        android:text="Monumentos"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btncaminatavillavo"
-        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

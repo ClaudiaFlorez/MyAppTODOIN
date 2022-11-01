@@ -235,7 +235,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo"
+            android:hint="Correo" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -256,8 +256,8 @@
             android:hint="Contraseña"
 
             tools:ignore="TouchTargetSizeCheck" />
-            
-      </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confcontrasena"
@@ -273,7 +273,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirmar Contrasena"
+            android:hint="Confirmar Contrasena"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -314,4 +314,3 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
