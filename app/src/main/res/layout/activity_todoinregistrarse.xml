@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="110dp"
         android:backgroundTint="#29668B"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -103,7 +103,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="248dp"
         android:layout_marginEnd="300dp"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -120,7 +120,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="306dp"
         android:layout_marginEnd="300dp"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -137,7 +137,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="468dp"
+        android:layout_marginTop="474dp"
         android:layout_marginEnd="280dp"
         android:backgroundTint="@color/white"
 
@@ -155,7 +155,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="362dp"
         android:layout_marginEnd="270dp"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -172,7 +172,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="530dp"
         android:layout_marginEnd="280dp"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -189,7 +189,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="419dp"
         android:layout_marginEnd="170dp"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -205,9 +205,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usuario"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -224,9 +224,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/correo"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="288dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -236,15 +236,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo"
-            tools:ignore="TouchTargetSizeCheck" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/contrasena"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="361dp"
+        android:layout_marginTop="344dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -254,16 +254,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
-            app:layout_constraintTop_toTopOf="parent"
+
             tools:ignore="TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+            
+      </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confcontrasena"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="414dp"
+        android:layout_marginTop="401dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -273,15 +274,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirmar Contrasena"
-            tools:ignore="TouchTargetSizeCheck" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/direccion"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="458dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -297,9 +298,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/telefono"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="514dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

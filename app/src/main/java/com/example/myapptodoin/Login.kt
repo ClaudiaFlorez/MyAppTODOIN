@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.myapptodoin.databinding.ActivityLoginBinding
+import com.example.myapptodoin.databinding.ActivityMainBinding
 
 
 class Login : AppCompatActivity() {
@@ -27,8 +28,15 @@ class Login : AppCompatActivity() {
                 Toast.makeText(this, "Datos incorrectos", Toast.LENGTH_LONG).show()
             }
         }
+
+        binding.recuperarcontrasenatxt.setOnClickListener {
+            startActivity(Intent(this, Recuperarcontrasena::class.java))
+
+        }
+
     }
 }
+
 
 
 

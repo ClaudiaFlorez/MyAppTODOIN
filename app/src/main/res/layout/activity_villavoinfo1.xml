@@ -37,23 +37,24 @@
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/villavoinfo1"
-        android:layout_width="414dp"
-        android:layout_height="366dp"
-        android:layout_marginStart="2dp"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:background="#F0F87F"
         android:capitalize="none"
-        android:fontFamily="sans-serif"
-        android:text="Villavicencio es la capital del departamento del Meta, conocida por muchos como la «Puerta del Llano», está situada al noroccidente del departamento del Meta, en el pie del monte de la cordillera oriental en la margen izquierda del Río Guatiquía, es la ciudad más grande de los llanos orientales y la primera fuente comercial y de abastecimiento para la región. SI DESEA VIAJAR A VILLAVICENCIO DEBE SABER...Villavicencio se encuentra ubicada a 115 km (71 millas) de la capital del país en ruta. El tiempo estimado de viaje es de aproximadamente 2h 30 minutos en automóvil y pasa a través de Guayabetal, Quetame, Cáqueza, Chipaque. En este trayecto los viajeros deben pasar tres peajes: un vehículo de Categoría I pagará  $14,300 (4USD) en el peaje de Boquerón I y II, $12,200 (3USD) en el Naranjal y $20,100 (5USD) en el de Pipiral.  En total, estos carros deben pagar $46.600 (12USD) en su viaje. El consumo de combustible es de aproximadamente 2 galones (9 litros)."
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="Villavicencio es la capital del departamento del Meta, conocida por muchos como la «Puerta del Llano», está situada al noroccidente del departamento del Meta, en el pie del monte de la cordillera oriental en la margen izquierda del Río Guatiquía, es la ciudad más grande de los llanos orientales y la primera fuente comercial y de abastecimiento para la región.\n \n SI DESEA VIAJAR A VILLAVICENCIO DEBE SABER...Villavicencio se encuentra ubicada a 115 km (71 millas) de la capital del país en ruta. El tiempo estimado de viaje es de aproximadamente 2h 30 minutos en automóvil y pasa a través de Guayabetal, Quetame, Cáqueza, Chipaque. En este trayecto los viajeros deben pasar tres peajes: un vehículo de Categoría I pagará  $14,300 (4USD) en el peaje de Boquerón I y II, $12,200 (3USD) en el Naranjal y $20,100 (5USD) en el de Pipiral.  En total, estos carros deben pagar $46.600 (12USD) en su viaje. El consumo de combustible es de aproximadamente 2 galones (9 litros)."
         android:textAlignment="textStart"
         android:textColor="#090908"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/mas8"
+        android:id="@+id/btnmas2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
