@@ -21,18 +21,13 @@ class TodoInRegistrarse : AppCompatActivity() {
         binding.btnregistroinicio.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
+        binding.btnregistrofoto.setOnClickListener {
+            startActivity(Intent(this, FotoPerfil::class.java))
 
-
+        }
     }
 }
 
-    /*
-         }*/
-
-    /* binding.btnregistrofoto.setOnClickListener {
- startActivity(Intent(this, Camera::class.java))
-
-}*/
 
 
 

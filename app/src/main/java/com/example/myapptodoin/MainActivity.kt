@@ -8,6 +8,7 @@ import com.example.myapptodoin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme((R.style.Theme_MyAppTODOIN))
         Thread.sleep(2000)
@@ -39,6 +40,8 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+
         }
     }
 
