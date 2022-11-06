@@ -17,10 +17,10 @@ class BogotaInfo2 : AppCompatActivity() {
             startActivity(Intent(this, BogotaInfo1::class.java))
     }
         binding.btnplanesbogota.setOnClickListener {
-            startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
+            startActivity(Intent(this, TodoInBogota::class.java))
 }
         binding.btnmapabogota.setOnClickListener {
-            startActivity(Intent(this, MapaBogota::class.java))
+            startActivity(Intent(this, GoogleMaps::class.java))
     }
 
     }

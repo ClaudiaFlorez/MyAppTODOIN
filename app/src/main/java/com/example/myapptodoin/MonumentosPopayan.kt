@@ -17,5 +17,8 @@ class MonumentosPopayan : AppCompatActivity() {
         binding.popayan4.setOnClickListener{
             startActivity(Intent(this,TodoInPopayan::class.java))
         }
+        binding.planeaydisfrutaaqui13.setOnClickListener {
+            startActivity(Intent(this, MonumentosPopayanListado::class.java))
+        }
     }
 }
