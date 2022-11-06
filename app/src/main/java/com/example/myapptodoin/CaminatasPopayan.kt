@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.myapptodoin.databinding.ActivityCaminatasPopayanBinding
 
 class CaminatasPopayan : AppCompatActivity() {
+
     private lateinit var binding: ActivityCaminatasPopayanBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
