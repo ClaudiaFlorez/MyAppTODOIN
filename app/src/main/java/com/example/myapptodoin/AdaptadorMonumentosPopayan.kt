@@ -5,10 +5,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import android.view.View
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorMonumentosPopayan(private val context: Context, val list: MutableList<MonumentoVisitarPopayan>):
+class AdaptadorMonumentosPopayan(private val context: Context, val list: MutableList<MonumentosVisitarPopayan>):
 
     RecyclerView.Adapter<AdaptadorMonumentosPopayan.ViewHolder>() {
     inner class ViewHolder(itemsview: View) : RecyclerView.ViewHolder(itemsview) {

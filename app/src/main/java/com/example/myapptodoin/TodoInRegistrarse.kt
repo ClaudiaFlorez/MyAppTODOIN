@@ -5,18 +5,26 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.myapptodoin.databinding.ActivityTodoinregistrarseBinding
-import android.widget.TextView
-import com.example.myapptodoin.databinding.ActivityTodoinRegistrarseBinding
+import com.example.myapptodoin.databinding.ActivityTodoInRegistrarseBinding
+
 
 
 class TodoInRegistrarse : AppCompatActivity() {
-    private lateinit var binding: ActivityTodoinRegistrarseBinding
+    private lateinit var binding: ActivityTodoInRegistrarseBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTodoinRegistrarseBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+
+        binding = ActivityTodoInRegistrarseBinding.inflate(layoutInflater)
+
+        //val view = binding.root
+        setContentView(binding.root)
+
+        binding.btnregistrofoto.setOnClickListener {
+            startActivity(Intent(this, FotoPerfil::class.java))
+            Toast.makeText(this, "click en el botón Registrar", Toast.LENGTH_LONG).show()
+        }
+
         binding.btnregistroregistrar.setOnClickListener {
             guardar()
             //startActivity(Intent(this, Login::class.java))
@@ -24,19 +32,16 @@ class TodoInRegistrarse : AppCompatActivity() {
         binding.btnregistroinicio.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
-        binding.btnregistrofoto.setOnClickListener {
-            startActivity(Intent(this, FotoPerfil::class.java))
-            Toast.makeText(this, "click en el botón Registrar", Toast.LENGTH_LONG).show()
-        }
+
     }
 
     fun guardar() {
-        val usuario = binding.usuario.toString()
-        val correo = binding.correo.toString()
-        val contrasena = binding.contrasena.toString()
-        val confcontrasena = binding.confcontrasena.toString()
-        val direccion = binding.ciudad2.toString()
-        val telefono = binding.telefono.toString()
+        val usuario = binding.boxusuario.text.toString()
+        val correo = binding.boxcorreo.text.toString()
+        val contrasena = binding.boxcontrasena.text.toString()
+        val confcontrasena = binding.boxconfcontrasena.text.toString()
+        val direccion = binding.boxdireccion.text.toString()
+        val telefono = binding.boxtelefono.text.toString()
         val datos = getSharedPreferences("bdusuario", Context.MODE_PRIVATE)
         val editor = datos.edit()
         editor.putString("usuario", usuario)
