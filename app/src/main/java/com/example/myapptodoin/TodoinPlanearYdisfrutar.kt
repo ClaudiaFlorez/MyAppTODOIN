@@ -26,6 +26,9 @@ class TodoinPlanearYdisfrutar : AppCompatActivity() {
         binding.btnpopayan1.setOnClickListener {
             startActivity(Intent(this, PopayanInfo1::class.java))
         }
+        binding.btnInicio.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
 
         }
 

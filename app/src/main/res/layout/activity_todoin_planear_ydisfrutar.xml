@@ -48,4 +48,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="294dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/amarillo"
+        android:backgroundTint="#29668B"
+        android:fontFamily="@font/balsamiq_sans_bold"
+        android:text="INICIO"
+        android:textColor="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

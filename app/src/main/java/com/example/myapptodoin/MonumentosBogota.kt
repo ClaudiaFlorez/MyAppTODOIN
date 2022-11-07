@@ -14,7 +14,7 @@ class MonumentosBogota : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.btnplanea.setOnClickListener {
-            startActivity(Intent(this, BogotaRegistro::class.java))
+            startActivity(Intent(this, MonumentosBogListado::class.java))
         }
         binding.btnatras2.setOnClickListener {
             startActivity(Intent(this, TodoInBogota::class.java))

@@ -13,14 +13,15 @@ class BogotaInfo2 : AppCompatActivity() {
         binding = ActivityBogotaInfo2Binding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        binding.btnmapabogota.setOnClickListener {
-            startActivity(Intent(this, MapaBogota::class.java))
-        }
-        binding.btnplanesbogota.setOnClickListener {
-            startActivity(Intent(this, TodoInBogota::class.java))
-        }
         binding.btndeatras6.setOnClickListener {
             startActivity(Intent(this, BogotaInfo1::class.java))
-        }
+    }
+        binding.btnplanesbogota.setOnClickListener {
+            startActivity(Intent(this, TodoInBogota::class.java))
+}
+        binding.btnmapabogota.setOnClickListener {
+            startActivity(Intent(this, GoogleMaps::class.java))
+    }
+
     }
 }

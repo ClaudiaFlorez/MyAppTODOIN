@@ -41,22 +41,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnregistroguardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="290dp"
-        android:layout_marginBottom="70dp"
-        android:backgroundTint="#29668B"
-
-        android:fontFamily="@font/balsamiq_sans_bold"
-        android:text="GUARDAR"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btnregistroinicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,7 +87,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="246dp"
         android:layout_marginEnd="300dp"
 
         android:fontFamily="@font/balsamiq_sans_bold"
@@ -112,7 +96,7 @@
         android:textColor="#F0F87F"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -203,25 +187,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usuario"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Usuario"
-            tools:ignore="TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/correo"
         android:layout_width="150dp"
         android:layout_height="70dp"
@@ -233,9 +198,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/boxcorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo"
+            android:hint="Correo" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -251,13 +217,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/boxcontrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
 
+            android:hint="Contraseña"
             tools:ignore="TouchTargetSizeCheck" />
-            
-      </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confcontrasena"
@@ -271,9 +238,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/boxconfcontrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirmar Contrasena"
+            android:hint="Confirmar Contrasena" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -289,6 +257,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/boxdireccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Dirección"
@@ -307,11 +276,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/boxtelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Teléfono"
             tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usuario"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/boxusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Usuario" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
