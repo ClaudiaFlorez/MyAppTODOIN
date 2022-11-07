@@ -23,7 +23,14 @@ class Login : AppCompatActivity() {
         binding.recuperarcontrasenatxt.setOnClickListener {
             startActivity(Intent(this, Recuperarcontrasena::class.java))
         }
-    }
+        binding.btnlogininicio.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        binding.btnlogininicio.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
+        }
     fun validar() {
         val usuario = binding.txtusuario.text.toString()
         val contrasena = binding.txtcontrasena.text.toString()
