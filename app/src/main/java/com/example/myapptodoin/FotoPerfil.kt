@@ -28,33 +28,35 @@ class FotoPerfil : AppCompatActivity() {
 
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
                 it.resolveActivity(packageManager).also {
-                    component ->
+                        component ->
                     creararchivoimagen()
-                    val fotoUri: Uri = FileProvider.getUriForFile(
-                        this,
-                        BuildConfig.APPLICATION_ID + "fileprovider", file)
+                    val fotoUri: Uri = FileProvider.getUriForFile(this, BuildConfig.APPLICATION_ID + ".fileprovider", file)
                     it.putExtra(MediaStore.EXTRA_OUTPUT, fotoUri)
-                    //abrircamara.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+
                 }
             }
-           abrircamara.launch(intent)
+            abrircamara.launch(intent)
 
         }
         binding.btnguardar.setOnClickListener {
-            //guardarGaleria()
+            startActivity(Intent(this, Login::class.java))
+            guardarGaleria()
         }
 
+        binding.btnlogin.setOnClickListener {
+            startActivity(Intent(this, Login::class.java))
+        }
     }
 
     val abrircamara = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             result ->
-            if (result.resultCode == RESULT_OK) {
-                //val data = result.data!!
-                //val bitmap = data.extras!!.get("data") as Bitmap
-                val bitmap = BitmapFactory.decodeFile(file.toString())
-                binding.imgfoto.setImageBitmap(bitmap)
-            }
+        if (result.resultCode == RESULT_OK) {
+            //val data = result.data!!
+            // val bitmap= data.extras!!.get("data")as Bitmap
+            val bitmap = BitmapFactory.decodeFile(file.toString())
+            binding.imgfoto.setImageBitmap(bitmap)
         }
+    }
 
     private lateinit var file:File
 
@@ -64,10 +66,10 @@ class FotoPerfil : AppCompatActivity() {
 
     }
 
-  /*  private fun guardarGaleria() {
+    private fun guardarGaleria() {
         val contenido = crearContenido()
         val uri = guardar(contenido)
-        limpiarcontenido(contenido, uri)
+        limpiarcontenido(contenido,uri)
     }
 
     private fun crearContenido(): ContentValues {
@@ -85,12 +87,12 @@ class FotoPerfil : AppCompatActivity() {
         var outputStream: OutputStream?
         var uri: Uri?
         application.contentResolver.also {
-            resolver ->
+                resolver ->
             uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, content)
             outputStream = resolver.openOutputStream(uri!!)
         }
         outputStream.use {
-            output ->
+                output ->
             getBitmap().compress(Bitmap.CompressFormat.JPEG, 100, output)
         }
         return uri!!
@@ -105,18 +107,5 @@ class FotoPerfil : AppCompatActivity() {
         content.put(MediaStore.MediaColumns.IS_PENDING, 0)
         contentResolver.update(uri, content, null, null)
 
-    }*/
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

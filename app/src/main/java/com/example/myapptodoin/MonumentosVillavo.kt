@@ -14,7 +14,7 @@ class MonumentosVillavo : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.planeaydisfrutaaqui13.setOnClickListener {
-            startActivity(Intent(this, VillavoRegistro::class.java))
+            startActivity(Intent(this, MonumentosVillavoListado::class.java))
         }
         binding.villavo4.setOnClickListener {
             startActivity(Intent(this, TodoInVillavo::class.java))

@@ -17,7 +17,7 @@ class PopayanInfo2 : AppCompatActivity() {
             startActivity(Intent(this, PopayanInfo1::class.java))
         }
         binding.planes.setOnClickListener {
-            startActivity(Intent(this, MapaPopayan::class.java))
+            startActivity(Intent(this, GoogleMaps::class.java))
     }
         binding.btnplanesparahacerenpopayan.setOnClickListener {
             startActivity(Intent(this, TodoInPopayan::class.java))

@@ -4,15 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/popayanregistro"
     tools:context=".PopayanRegistro">
 
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/infovillavo"
+        android:layout_width="400dp"
+        android:layout_height="438dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F0F87F"
+        android:fontFamily="@font/balsamiq_sans"
+        android:text="POPAYÁN \n Es una de las ciudades más antiguas de América, es la capital del departamento del Cauca en Colombia.
+ La ciudad conserva una arquitectura histórica y colonial, lo que le ha dado el seudónimo de la ciudad blanca.
+ Esta cuenta con una plaza principal donde se encuentran la mayoría de los edificios coloniales y republicanos de la ciudad, se conoce como el Parque Caldas. Además, allí existen sitios turísticos como la Torre del Reloj y el Puente del Humilladero, desde donde se aprecia una de las mejores vistas de la ciudad.
+ Así como, el Morro de Tulcán, un monumento precolombino y arqueológico y el Rincón Payanés, una réplica en miniatura de la ciudad.
+Los payaneses tienen costumbres religiosas arraigadas, de hecho, gran parte de sus actividades turísticas giran en torno al turismo religioso.
+ Su celebración de Semana Santa ha sido reconocida por la Unesco como parte de los Patrimonios Inmateriales de la Humanidad.
+ Además, la ciudad posee múltiples catedrales que atraen a los viajeros como la Iglesia de San Francisco, la Ermita de Popayán, el Santuario de Belén y el Templo de la Encarnación de las Monjas "
+        android:textAlignment="textStart"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/inicio2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="308dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="20dp"
+        android:text="INICIO"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/planeaydisfrutaaqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="20dp"
+        android:text="Planea y Disfruta Aquí"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

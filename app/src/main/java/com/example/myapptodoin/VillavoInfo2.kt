@@ -14,7 +14,7 @@ class VillavoInfo2 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.btnmapavillavo2.setOnClickListener {
-            startActivity(Intent(this, MapaVillavo::class.java))
+            startActivity(Intent(this, GoogleMaps::class.java))
         }
         binding.btnplanesparahacerenvillavo2.setOnClickListener {
             startActivity(Intent(this, TodoInVillavo::class.java))

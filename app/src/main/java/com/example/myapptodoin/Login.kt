@@ -19,36 +19,42 @@ class Login : AppCompatActivity() {
         setContentView(view)
         binding.btnloginingresar.setOnClickListener {
             validar()
-            //startActivity(Intent(this, Perfil::class.java))
-
         }
         binding.recuperarcontrasenatxt.setOnClickListener {
             startActivity(Intent(this, Recuperarcontrasena::class.java))
         }
-    }
+        binding.btnlogininicio.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        binding.btnlogininicio.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
 
+        }
     fun validar() {
         val usuario = binding.txtusuario.text.toString()
-        val clave = binding.txtcontrasena.text.toString()
+        val contrasena = binding.txtcontrasena.text.toString()
         val datos = getSharedPreferences("bdusuario", Context.MODE_PRIVATE)
-        val usu = datos.getString("USUARIO", "")
-        val cla = datos.getString("CONTRASENA", "")
+        val usu = datos.getString("usuario", "")
+        val cont = datos.getString("contrasena", "")
+        Toast.makeText(this, "validado", Toast.LENGTH_LONG).show()
 
-        if (usuario.isEmpty()) {
-            binding.txtusuario.setHint("Ingresar Usuario")
-            }
-        else if (clave.isEmpty()){
-            binding.txtcontrasena.setHint("Digite la Clave")
+        if(usuario.isEmpty()) {
+            binding.txtusuario.setHint("Ingresar el Usuario")
+        }
+        else if(contrasena.isEmpty()){
+            binding.txtcontrasena.setHint("Ingrese la contraseña")
             binding.txtcontrasena.setHintTextColor(Color.RED)
         }
-        else if (usuario.equals(usu) && clave.equals(cla)) {
+        else if (usuario.equals(usu)&&contrasena.equals(cont)){
             Toast.makeText(this, "Datos correctos", Toast.LENGTH_LONG).show()
-            startActivity(Intent(this, Perfil::class.java))
+            startActivity(Intent(this,Perfil::class.java))
         }
         else{
-            Toast.makeText(this, "Clave o Usuario incorrectos",Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Sus datos no son correctos", Toast.LENGTH_LONG).show()
         }
     }
+
 }
 
 

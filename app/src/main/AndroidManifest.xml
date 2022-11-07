@@ -6,24 +6,18 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <queries>
-        <intent>
-            <action android:name="media.IMAGE_CAPTURA" />
-        </intent>
-    </queries>
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="MyAppTODOIN"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppTODOIN"
         tools:targetApi="31">
         <activity
-            android:name=".TodoinRegistrarse"
+            android:name=".MonumentosPopayanListado"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -31,9 +25,7 @@
         </activity>
         <activity
             android:name=".GoogleMaps"
-            android:exported="false"
-            android:label="@string/title_activity_google_maps"
-            android:theme="@style/Theme.MyAppTODOIN">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -111,6 +103,11 @@
         <activity
             android:name=".Splash"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -152,12 +149,8 @@
         </activity>
         <activity
             android:name=".TodoInRegistrarse"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -305,7 +298,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Recuperarcontrasena"
             android:exported="false">
@@ -330,7 +323,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC4hGDAfkbTxwcmkMKf6ipM32s0XG5Z9Rc" />
+            android:value="AIzaSyCoZWiA8AR9FTfWm_IXHOVY3czEIrsoACk" />
     </application>
 
 </manifest>
