@@ -8,7 +8,6 @@ import android.widget.Toast
 import com.example.myapptodoin.databinding.ActivityTodoInRegistrarseBinding
 
 
-
 class TodoInRegistrarse : AppCompatActivity() {
     private lateinit var binding: ActivityTodoInRegistrarseBinding
 
