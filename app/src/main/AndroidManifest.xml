@@ -17,7 +17,15 @@
         android:theme="@style/Theme.MyAppTODOIN"
         tools:targetApi="31">
         <activity
-            android:name=".TodoInRegistrarse"
+
+            android:name=".RecuperarClave"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegistroUsuarioLogin"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -108,19 +116,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Splash"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
+           
             android:name=".BogotaInfo1"
             android:exported="false">
             <meta-data
@@ -156,6 +152,22 @@
                 android:value="" />
         </activity>
         <activity
+
+            android:name=".TodoInRegistrarse"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+
+
             android:name=".MapaBogota"
             android:exported="false">
             <meta-data

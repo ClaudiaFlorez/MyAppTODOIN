@@ -4,13 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/popayanregistro"
+    android:background="@drawable/registropopayan"
     tools:context=".PopayanRegistro">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoapp" />
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/infovillavo"
-        android:layout_width="400dp"
-        android:layout_height="438dp"
+        android:layout_width="386dp"
+        android:layout_height="415dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="4dp"
@@ -25,9 +37,10 @@ Los payaneses tienen costumbres religiosas arraigadas, de hecho, gran parte de s
  Además, la ciudad posee múltiples catedrales que atraen a los viajeros como la Iglesia de San Francisco, la Ermita de Popayán, el Santuario de Belén y el Templo de la Encarnación de las Monjas "
         android:textAlignment="textStart"
         android:textColor="#090909"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -36,6 +49,7 @@ Los payaneses tienen costumbres religiosas arraigadas, de hecho, gran parte de s
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/azulbotones"
         android:text="INICIO"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,6 +64,7 @@ Los payaneses tienen costumbres religiosas arraigadas, de hecho, gran parte de s
         android:layout_marginStart="30dp"
         android:layout_marginEnd="270dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/azulbotones"
         android:text="Planea y Disfruta Aquí"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
