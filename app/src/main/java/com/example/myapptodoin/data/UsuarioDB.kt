@@ -12,8 +12,10 @@ import com.example.myapptodoin.model.UsuarioModdel
 abstract class UsuarioDB:RoomDatabase() {
     abstract val usuarioDAO: UsuarioDAO
 
+
     companion object {
         const val DATABASE_NAME = "dbtodoin"
+
     }
 
 

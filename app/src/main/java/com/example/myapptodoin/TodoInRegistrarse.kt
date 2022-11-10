@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+
 import androidx.room.Room
 import com.example.myapptodoin.data.UsuarioDB
 import com.example.myapptodoin.databinding.ActivityTodoinregistrarseBinding
@@ -18,6 +19,7 @@ class TodoInRegistrarse : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         database= Room.databaseBuilder(application,UsuarioDB::class.java,UsuarioDB.DATABASE_NAME).allowMainThreadQueries().build()
         binding = ActivityTodoinregistrarseBinding.inflate(layoutInflater)
+
 
         //val view = binding.root
         setContentView(binding.root)
@@ -51,6 +53,3 @@ class TodoInRegistrarse : AppCompatActivity() {
 
     }
 }
-
-
-
