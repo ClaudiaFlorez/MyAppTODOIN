@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Login::class.java))
 }
         binding.btnregistrarse.setOnClickListener {
-            startActivity(Intent(this, TodoInRegistrarse::class.java))
+            startActivity(Intent(this, RegistroUsuarioLogin::class.java))
 
 
         }

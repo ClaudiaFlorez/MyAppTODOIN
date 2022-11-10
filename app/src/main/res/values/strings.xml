@@ -38,4 +38,9 @@
     <string name="Usuario">Usuario</string>
     <string name="Contrasena">Contrasena</string>
     <string name="atras">Atrás</string>
+    <string name="registrousuario">Usuario</string>
+    <string name="registroclave">Clave</string>
+    <string name="registroconfirmarclave">Confirmar Contraseña</string>
+    <string name="registroconfclave">Confirmar Clave</string>
+    <string name="txtcorreorecupera">Email Recuperación</string>
 </resources>
