@@ -18,6 +18,6 @@ class UsuarioModdel(
     val confcontrasena: String,
     @ColumnInfo(name = "direccion")
     val direccion: String,
-
-
-    )
+    @ColumnInfo(name = "telefono")
+    val telefono: String,
+)

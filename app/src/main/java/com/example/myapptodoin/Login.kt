@@ -28,23 +28,18 @@ class Login : AppCompatActivity() {
 
 
         binding.btnloginingresar.setOnClickListener {
-
-
-            login(binding.txtusuario.text.toString(),binding.txtcontrasena.text.toString())
-
-
+            //login(binding.txtusuario.text.toString(),binding.txtcontrasena.text.toString())
+            startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
         }
         binding.txtrecuperarclave.setOnClickListener {
             startActivity(Intent(this, RecuperarClave::class.java))
         }
         binding.btnlogininicio.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
-        }
-        binding.btnlogininicio.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
 
         }
+validar()
+    }
     fun validar() {
         val usuario = binding.txtusuario.text.toString()
         val contrasena = binding.txtcontrasena.text.toString()
@@ -69,23 +64,29 @@ class Login : AppCompatActivity() {
         }
     }
 
-
     private fun login(email:String, password:String){
         firebaseauth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this){task->
 
-          if (task.isSuccessful){
-              Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
-              startActivity(Intent(this,TodoInRegistrarse::class.java))
-          }
-        else{
-              Toast.makeText(this,"El usuario no se encontró",Toast.LENGTH_LONG).show()
-        }
+            if (task.isSuccessful){
+                Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
+                startActivity(Intent(this,TodoInRegistrarse::class.java))
+            }
+            else{
+                Toast.makeText(this,"El usuario no se encontró",Toast.LENGTH_LONG).show()
+            }
         }
 
     }
 
 
 }
+
+
+
+
+
+
+
 
 
 

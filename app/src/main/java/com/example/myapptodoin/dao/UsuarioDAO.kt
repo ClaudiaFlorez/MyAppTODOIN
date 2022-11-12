@@ -1,4 +1,4 @@
-package com.example.myapptodoin.data
+package com.example.myapptodoin.dao
 
 import androidx.room.*
 import com.example.myapptodoin.model.UsuarioModdel

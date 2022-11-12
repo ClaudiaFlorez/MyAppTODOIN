@@ -2,6 +2,7 @@ package com.example.myapptodoin.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.example.myapptodoin.dao.UsuarioDAO
 import com.example.myapptodoin.model.UsuarioModdel
 
 @Database(
@@ -14,9 +15,7 @@ abstract class UsuarioDB:RoomDatabase() {
 
 
     companion object {
-        const val DATABASE_NAME = "dbtodoin"
+        const val DATABASE_NAME = "dbtodoin1"
 
     }
-
-
 }
