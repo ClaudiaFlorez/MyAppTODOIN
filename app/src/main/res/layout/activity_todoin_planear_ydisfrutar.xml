@@ -56,11 +56,10 @@
         android:layout_marginStart="294dp"
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="60dp"
-        android:background="@color/amarillo"
         android:backgroundTint="#29668B"
         android:fontFamily="@font/balsamiq_sans_bold"
         android:text="INICIO"
-        android:textColor="#546E7A"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
