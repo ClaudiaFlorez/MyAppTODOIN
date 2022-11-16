@@ -5,19 +5,18 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName="usuarios")
+
 class UsuarioModdel(
     @PrimaryKey
-    val nomusuario: String,
-    @ColumnInfo(name = "usuario")
     val usuario: String,
     @ColumnInfo(name = "correo")
     val correo: String,
     @ColumnInfo(name = "contrasena")
     val contrasena: String,
-    @ColumnInfo(name = "confcontrasena")
+    @ColumnInfo(name = "confirmar contrasena")
     val confcontrasena: String,
-    @ColumnInfo(name = "direccion")
-    val direccion: String,
+    @ColumnInfo(name = "nombre completo")
+    val nombrecompleto: String,
     @ColumnInfo(name = "telefono")
     val telefono: String,
 )

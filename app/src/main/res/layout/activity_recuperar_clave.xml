@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pexels_aron_visuals_1743165"
     tools:context=".RecuperarClave">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -21,6 +22,8 @@
             android:id="@+id/txtcorreorecupera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/balsamiq_sans"
             android:hint="@string/txtcorreorecupera" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,10 +34,16 @@
         android:layout_marginStart="134dp"
         android:layout_marginTop="62dp"
         android:layout_marginEnd="134dp"
+        android:backgroundTint="@color/azulbotones"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Recuperar"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textinputLayout16" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 

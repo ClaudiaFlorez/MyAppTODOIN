@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/popayanregistro"
+    android:background="@drawable/popayanregistro2"
     tools:context=".PopayanRegistro">
 
     <ImageView
@@ -28,7 +28,8 @@
         android:layout_marginBottom="4dp"
         android:background="#F0F87F"
         android:fontFamily="@font/balsamiq_sans"
-        android:text="POPAYÁN \n Es una de las ciudades más antiguas de América, es la capital del departamento del Cauca en Colombia.
+        android:text="POPAYÁN
+ Es una de las ciudades más antiguas de América, es la capital del departamento del Cauca en Colombia.
  La ciudad conserva una arquitectura histórica y colonial, lo que le ha dado el seudónimo de la ciudad blanca.
  Esta cuenta con una plaza principal donde se encuentran la mayoría de los edificios coloniales y republicanos de la ciudad, se conoce como el Parque Caldas. Además, allí existen sitios turísticos como la Torre del Reloj y el Puente del Humilladero, desde donde se aprecia una de las mejores vistas de la ciudad.
  Así como, el Morro de Tulcán, un monumento precolombino y arqueológico y el Rincón Payanés, una réplica en miniatura de la ciudad.
@@ -50,8 +51,9 @@ Los payaneses tienen costumbres religiosas arraigadas, de hecho, gran parte de s
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/azulbotones"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="INICIO"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
@@ -62,11 +64,12 @@ Los payaneses tienen costumbres religiosas arraigadas, de hecho, gran parte de s
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="270dp"
+        android:layout_marginEnd="245dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/azulbotones"
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Planea y Disfruta Aquí"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"

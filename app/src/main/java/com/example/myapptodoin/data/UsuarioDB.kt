@@ -7,7 +7,7 @@ import com.example.myapptodoin.model.UsuarioModdel
 
 @Database(
     entities=[UsuarioModdel::class],
-    version=1, exportSchema =false)
+    version=3, exportSchema =false)
 
 
 abstract class UsuarioDB:RoomDatabase() {
@@ -15,7 +15,7 @@ abstract class UsuarioDB:RoomDatabase() {
 
 
     companion object {
-        const val DATABASE_NAME = "dbtodoin1"
+        const val DATABASE_NAME = "dbtodoin0"
 
     }
 }

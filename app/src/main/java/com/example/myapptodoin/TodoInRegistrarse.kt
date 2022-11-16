@@ -22,8 +22,11 @@ class TodoInRegistrarse : AppCompatActivity() {
         //val view = binding.root
         setContentView(binding.root)
         binding.btnregistroregistrar.setOnClickListener {
+            val bundle=intent.extras
+            val datoid:String?=bundle?.getString("id")
             startActivity(Intent(this, Login::class.java))
-            guardarconroom()
+            Toast.makeText(this, "DATOS GUARDADOS",Toast.LENGTH_LONG).show()
+        guardarconroom()
         }
         binding.btnregistrofoto.setOnClickListener {
             startActivity(Intent(this, FotoPerfil::class.java))
@@ -31,26 +34,20 @@ class TodoInRegistrarse : AppCompatActivity() {
         }
         binding.btnregistroinicio.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
-        }
 
+
+
+        }
     }
+
 
     fun guardarconroom() {
         val usuario = binding.boxusuario.text.toString()
         val correo = binding.boxcorreo.text.toString()
         val contrasena = binding.boxcontrasena.text.toString()
         val confcontrasena = binding.boxconfcontrasena.text.toString()
-        val direccion = binding.boxnombrecompleto.text.toString()
+        val nombrecompleto = binding.boxnombrecompleto.text.toString()
         val telefono = binding.boxtelefono.text.toString()
-        val usu = UsuarioModdel(
-            usuario,
-            correo,
-            contrasena,
-            confcontrasena,
-            direccion,
-            direccion,
-            telefono
-        )
+        val usu = UsuarioModdel(usuario, correo, contrasena, confcontrasena, nombrecompleto, telefono)
         database.usuarioDAO.insertar(usu)
     }}
-

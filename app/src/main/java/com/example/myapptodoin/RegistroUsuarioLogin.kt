@@ -1,5 +1,6 @@
 package com.example.myapptodoin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -13,40 +14,44 @@ class RegistroUsuarioLogin : AppCompatActivity() {
     private lateinit var binding: ActivityRegistroUsuarioLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding=ActivityRegistroUsuarioLoginBinding.inflate(layoutInflater)
+        binding = ActivityRegistroUsuarioLoginBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        firebaseAuth=Firebase.auth
-        binding.btnregistrar.setOnClickListener{
-            if(binding.txtclave.text.toString().equals(binding.txtconfclave.text.toString())){
-                if(binding.txtclave.length()>=6){
-                    registrarUsuarioSesion(binding.txtusuario.text.toString(), binding.txtclave.text.toString())
+        firebaseAuth = Firebase.auth
+        binding.btnregistrar.setOnClickListener {
+            if (binding.txtclave.text.toString().equals(binding.txtconfclave.text.toString())) {
+                if (binding.txtclave.length() >= 6) {
+                    registrarUsuarioSesion(
+                        binding.txtusuario.text.toString(),
+                        binding.txtclave.text.toString()
+                    )
+                } else {
+                    Toast.makeText(
+                        this,
+                        "La clave debe tener minimo 6 caracteres",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
-                else{
-                    Toast.makeText(this,"La clave debe tener minimo 6 caracteres",Toast.LENGTH_LONG).show()
-                }
-            }
-            else{
-                Toast.makeText(this,"La claves deben ser iguales",Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this, "La claves deben ser iguales", Toast.LENGTH_LONG).show()
             }
         }
     }
 
-    private fun registrarUsuarioSesion(email:String,clave:String){
-        if (email.isNotEmpty()&&clave.isNotEmpty()){
-            firebaseAuth.createUserWithEmailAndPassword(email,clave).addOnCompleteListener(this){
-                    task->
-                if (task.isSuccessful){
-                    Toast.makeText(this,"Datos guardados",Toast.LENGTH_LONG).show()
+            private fun registrarUsuarioSesion(email: String, clave: String) {
+                if (email.isNotEmpty() && clave.isNotEmpty()) {
+                    firebaseAuth.createUserWithEmailAndPassword(email, clave).addOnCompleteListener(this)
+                    { task ->
+                            if (task.isSuccessful) {
+                                Toast.makeText(this, "Datos guardados", Toast.LENGTH_LONG).show()
+                            } else {
+                                Toast.makeText(this, "Sus datos no se guardaron", Toast.LENGTH_LONG).show()                            }
+                        }
+                } else {
+
+                    Toast.makeText(this, "Los campos deben contener texto", Toast.LENGTH_LONG).show()
                 }
-                else{
-                    Toast.makeText(this,"Sus datos no se guardaron",Toast.LENGTH_LONG).show()
-                }
+                //startActivity(Intent(this, Login::class.java))
             }
         }
-        else{
 
-            Toast.makeText(this, "Los campos deben contener texto", Toast.LENGTH_LONG).show()
-        }
-    }
-}

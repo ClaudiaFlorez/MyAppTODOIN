@@ -11,6 +11,7 @@ import com.example.myapptodoin.databinding.ActivityLoginBinding
 import com.example.myapptodoin.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
 
@@ -18,17 +19,19 @@ class Login : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding  //para que un usuario x se pueda loguear
     private lateinit var firebaseauth:FirebaseAuth
     private lateinit var authStateListener:FirebaseAuth.AuthStateListener
+    private val bd=FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        firebaseauth = Firebase.auth
 
-        firebaseauth=Firebase.auth
+        validar()
 
 
         binding.btnloginingresar.setOnClickListener {
-            //login(binding.txtusuario.text.toString(),binding.txtcontrasena.text.toString())
+            login(binding.txtusuario.text.toString(), binding.txtcontrasena.text.toString())
             startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
         }
         binding.txtrecuperarclave.setOnClickListener {
@@ -38,9 +41,10 @@ class Login : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
 
         }
-validar()
+
     }
     fun validar() {
+
         val usuario = binding.txtusuario.text.toString()
         val contrasena = binding.txtcontrasena.text.toString()
         val datos = getSharedPreferences("bdusuario", Context.MODE_PRIVATE)
@@ -62,14 +66,17 @@ validar()
         else{
             Toast.makeText(this, "Sus datos no son correctos", Toast.LENGTH_LONG).show()
         }
+
     }
 
     private fun login(email:String, password:String){
         firebaseauth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this){task->
-
             if (task.isSuccessful){
-                Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
-                startActivity(Intent(this,TodoInRegistrarse::class.java))
+            val id=firebaseauth.uid
+            Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
+            val intent=Intent(this, Perfil::class.java)
+            intent.putExtra("ide", id)
+            startActivity(Intent(this,TodoInRegistrarse::class.java))
             }
             else{
                 Toast.makeText(this,"El usuario no se encontró",Toast.LENGTH_LONG).show()
