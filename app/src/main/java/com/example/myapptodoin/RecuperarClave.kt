@@ -17,17 +17,19 @@ class RecuperarClave : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = Firebase.auth
         binding.btnrecuperarclave.setOnClickListener {
+
             recuperarclave(binding.txtcorreorecupera.text.toString())
+        }
 
         }
-    }
 
     private fun recuperarclave(email: String) {
-        firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener() { task ->
+        firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener() {
+            task ->
             if (task.isSuccessful) {
-                Toast.makeText(this, "El correo de recuperación fue enviado", Toast.LENGTH_LONG)
-                    .show()
-            } else {
+                Toast.makeText(this, "El correo de recuperación fue enviado", Toast.LENGTH_LONG).show()
+            }
+            else {
                 Toast.makeText(this, "No fue posible enviar el correo", Toast.LENGTH_LONG).show()
             }
         }

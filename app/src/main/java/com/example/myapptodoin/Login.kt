@@ -27,12 +27,11 @@ class Login : AppCompatActivity() {
         setContentView(view)
         firebaseauth = Firebase.auth
 
-        validar()
-
+        //validar()
 
         binding.btnloginingresar.setOnClickListener {
             login(binding.txtusuario.text.toString(), binding.txtcontrasena.text.toString())
-            startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
+            //startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
         }
         binding.txtrecuperarclave.setOnClickListener {
             startActivity(Intent(this, RecuperarClave::class.java))
@@ -76,16 +75,13 @@ class Login : AppCompatActivity() {
             Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
             val intent=Intent(this, Perfil::class.java)
             intent.putExtra("ide", id)
-            startActivity(Intent(this,TodoInRegistrarse::class.java))
+            startActivity(Intent(this,TodoinPlanearYdisfrutar::class.java))
             }
             else{
                 Toast.makeText(this,"El usuario no se encontró",Toast.LENGTH_LONG).show()
             }
         }
-
     }
-
-
 }
 
 
