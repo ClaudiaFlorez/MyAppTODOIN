@@ -9,15 +9,16 @@
 
     <Button
         android:id="@+id/btnvillavo"
-        android:layout_width="102dp"
+        android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="284dp"
         android:backgroundTint="#29668b"
         android:fontFamily="@font/balsamiq_sans"
-        android:text="@string/villavo"
+        android:text="@string/villavicencio"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/btnbogota"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />

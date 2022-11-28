@@ -1,5 +1,6 @@
 package com.example.myapptodoin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -19,6 +20,11 @@ class RecuperarClave : AppCompatActivity() {
         binding.btnrecuperarclave.setOnClickListener {
 
             recuperarclave(binding.txtcorreorecupera.text.toString())
+        }
+
+
+        binding.btnbacklogin.setOnClickListener{
+            startActivity(Intent(this, Login::class.java))
         }
 
         }

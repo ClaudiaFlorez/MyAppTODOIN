@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "763054798521",
-    "project_id": "myapptodoin123",
-    "storage_bucket": "myapptodoin123.appspot.com"
+    "project_number": "661429076849",
+    "project_id": "myapptodoindb-b4df0",
+    "storage_bucket": "myapptodoindb-b4df0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:763054798521:android:432d3e7d7d72a44ccbcd68",
+        "mobilesdk_app_id": "1:661429076849:android:21e9f99b31ae9dc85cacd0",
         "android_client_info": {
           "package_name": "com.example.myapptodoin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "763054798521-7k1j0l52s4erckeg9m1rdg9nk7q5n2g3.apps.googleusercontent.com",
+          "client_id": "661429076849-ppn7194a864q65081kcghr3ct3novlll.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC21zl933TQ3LJMkTr8n0MsLWUx9UhhTyM"
+          "current_key": "AIzaSyDpSB0CamFhRosasIsH6Wb9oqIKrSfWJcU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "763054798521-7k1j0l52s4erckeg9m1rdg9nk7q5n2g3.apps.googleusercontent.com",
+              "client_id": "661429076849-ppn7194a864q65081kcghr3ct3novlll.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

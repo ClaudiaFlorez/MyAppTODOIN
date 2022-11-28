@@ -30,12 +30,11 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="167dp"
-            android:background="@drawable/monumentocristorey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.113"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/monumento1" />
+            app:srcCompat="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/textusuario"
@@ -46,7 +45,7 @@
             android:layout_marginEnd="8dp"
             android:background="#f0f87f"
             android:text="Nombre"
-            android:textSize="11sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

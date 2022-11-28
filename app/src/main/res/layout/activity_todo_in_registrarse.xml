@@ -14,7 +14,7 @@
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="110dp"
-        android:backgroundTint="#29668B"
+        android:backgroundTint="@color/azulbotones"
 
         android:fontFamily="@font/balsamiq_sans_bold"
         android:text="Tomar Foto"
@@ -30,7 +30,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="#29668B"
+        android:backgroundTint="@color/azulbotones"
 
         android:fontFamily="@font/balsamiq_sans_bold"
         android:text="REGISTRAR"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="#29668B"
+        android:backgroundTint="@color/azulbotones"
 
         android:fontFamily="@font/balsamiq_sans_bold"
         android:text="INICIO"

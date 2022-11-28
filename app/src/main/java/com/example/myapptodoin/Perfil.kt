@@ -19,33 +19,31 @@ class Perfil : AppCompatActivity() {
         consultarperfil(dato?:"")
 
         binding.btnperfilplanea.setOnClickListener {
-            startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java))
-        }
+            startActivity(Intent(this, TodoinPlanearYdisfrutar::class.java)) }
 
         binding.btnexit.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java)) }
 
-        }
+
+
         //obtenerdatos()
-    binding.btnperfilplanea.setOnClickListener{
-        startActivity(Intent(this, MonumentosVillavoListado::class.java))
-    }
     }
     fun obtenerdatos() {
         val cajatxt = binding.txtdatosusu
         val datos = getSharedPreferences("bdusuario", Context.MODE_PRIVATE)
-        val nombrecompleto = datos.getString("nombrecopleto", "")
-        val usuario = datos.getString("usuario", "")
+        val apellido = datos.getString("apellido", "")
         val correo = datos.getString("correo", "")
-        val direccion = datos.getString("direccion", "")
+        val nombre = datos.getString("nombre", "")
         val telefono = datos.getString("telefono", "")
-        cajatxt.setText("Nombre Completo: "+nombrecompleto+"\n"+"Usuario: "+usuario+"\n"+"Correo: "+correo+"\n"+"Dirección: "+direccion+"\n"+"Teléfono: "+telefono)
+        cajatxt.setText("apellido: "+apellido+"\n"+"correo: "+correo+"\n"+"nombre: "+nombre+"\n"+"teléfono: "+telefono)
+  }
 
-    }
     fun consultarperfil(id:String){
         db.collection("usuarios").document(id).get().addOnSuccessListener{
-        binding.txtdatosusu.setText(it.get("Nombre Completo")as String? +"\n " +it.get("Usuario") as String?+"\n "
-                +it.get("Correo") as String?+"\n "+ it.get("Teléfono")as String? )
+        binding.txtdatosusu.setText(it.get("nombre")as String? +" "+it.get("apellido") as String?+"\n "+it.get("correo") as String?+"\n "
+                + "Celular: "+ it.get("teléfono")as String? )
         }
+
     }
+
 }

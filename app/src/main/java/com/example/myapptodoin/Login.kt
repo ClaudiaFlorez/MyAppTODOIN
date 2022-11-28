@@ -42,7 +42,7 @@ class Login : AppCompatActivity() {
         }
 
     }
-    fun validar() {
+    /*fun validar() {
 
         val usuario = binding.txtusuario.text.toString()
         val contrasena = binding.txtcontrasena.text.toString()
@@ -66,16 +66,18 @@ class Login : AppCompatActivity() {
             Toast.makeText(this, "Sus datos no son correctos", Toast.LENGTH_LONG).show()
         }
 
-    }
+    }*/
 
     private fun login(email:String, password:String){
         firebaseauth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this){task->
             if (task.isSuccessful){
-            val id=firebaseauth.uid
-            Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
-            val intent=Intent(this, Perfil::class.java)
-            intent.putExtra("ide", id)
-            startActivity(Intent(this,TodoinPlanearYdisfrutar::class.java))
+                val id=firebaseauth.uid
+
+                Toast.makeText(this,"Datos correctos",Toast.LENGTH_LONG).show()
+                val intent=Intent(this, Perfil::class.java)
+                intent.putExtra("ide", id)
+                startActivity(intent)
+            //startActivity(Intent(this,Perfil::class.java))
             }
             else{
                 Toast.makeText(this,"El usuario no se encontró",Toast.LENGTH_LONG).show()

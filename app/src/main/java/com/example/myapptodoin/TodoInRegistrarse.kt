@@ -37,6 +37,7 @@ class TodoInRegistrarse : AppCompatActivity() {
             // guardarconroom()
 
         }
+
     }
 
     /*fun guardarconroom() {
@@ -51,8 +52,8 @@ class TodoInRegistrarse : AppCompatActivity() {
     }}*/
     private fun guardardatosfirestore(datoid:String){
         db.collection("usuarios").document(datoid).set(
-            hashMapOf("Nombre" to binding.boxnombre.text.toString(),"Apellido" to binding.boxapellido.text.toString(),
-                "Correo" to binding.boxcorreo.text.toString(), "Teléfono" to binding.boxtelefono.text.toString()))
+            hashMapOf("nombre" to binding.boxnombre.text.toString(),"apellido" to binding.boxapellido.text.toString(),
+                "correo" to binding.boxcorreo.text.toString(), "teléfono" to binding.boxtelefono.text.toString()))
 
     }
 

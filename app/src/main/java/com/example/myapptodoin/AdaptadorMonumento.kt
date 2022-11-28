@@ -4,18 +4,24 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.myapptodoin.model.MonumentoVisitarVillavo
 
 class AdaptadorMonumento (private val context: Context, val lista: MutableList<MonumentoVisitarVillavo>, var clickListener: ClickListener):
     RecyclerView.Adapter<AdaptadorMonumento.ViewHolder>(){
     inner class ViewHolder(itemsview:View,listener: ClickListener):RecyclerView.ViewHolder(itemsview), View.OnClickListener{
-        lateinit var datosview: TextView
+        var datosview: TextView
+        var datosimagen:ImageView
+
         var listener:ClickListener?=null
+
         init {
             datosview=itemsview.findViewById(R.id.textusuario)
-            //this.listener=listener
+            datosimagen=itemsview.findViewById(R.id.imgusuario)
+            this.listener=listener
             itemsview.setOnClickListener(this)
         }
 
@@ -31,7 +37,8 @@ class AdaptadorMonumento (private val context: Context, val lista: MutableList<M
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val positionmonumento=lista[position]
-        holder.datosview.text=positionmonumento.nombre
+        holder.datosview.text=positionmonumento.monumento
+        Glide.with(holder.itemView).load(positionmonumento.imagen).into(holder.datosimagen)
     }
 
     override fun getItemCount(): Int {

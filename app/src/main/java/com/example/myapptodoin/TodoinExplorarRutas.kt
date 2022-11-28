@@ -19,7 +19,7 @@ class TodoinExplorarRutas : AppCompatActivity() {
             startActivity(Intent(this, Login::class.java))
         }
         binding.btnregistro.setOnClickListener {
-            startActivity(Intent(this, TodoInRegistrarse::class.java))
+            startActivity(Intent(this, RegistroUsuarioLogin::class.java))
 
         }
         binding.btnsalir1.setOnClickListener {

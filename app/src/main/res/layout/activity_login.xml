@@ -51,16 +51,17 @@
         android:id="@+id/btnloginingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="120dp"
         android:layout_marginEnd="120dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="INGRESAR"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -71,6 +72,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="INICIO"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,6 +88,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#29668B"
 
+        android:fontFamily="@font/balsamiq_sans_bold"
         android:text="SALIR"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"

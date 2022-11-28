@@ -1,38 +1,69 @@
 package com.example.myapptodoin
 
-
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapptodoin.databinding.ActivityMonumentosBogListadoBinding
-import com.example.myapptodoin.databinding.ActivityMonumentosPopayanBinding
 import com.example.myapptodoin.databinding.ActivityMonumentosPopayanListadoBinding
-
+import com.example.myapptodoin.model.MonumentosVisitarPopayan
+import com.google.firebase.firestore.DocumentChange
+import com.google.firebase.firestore.EventListener
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.FirebaseFirestoreException
+import com.google.firebase.firestore.QuerySnapshot
 
 class MonumentosPopayanListado : AppCompatActivity() {
-    private lateinit var binding: ActivityMonumentosPopayanListadoBinding
+    private lateinit var bindin:ActivityMonumentosPopayanListadoBinding
     private var list:MutableList<MonumentosVisitarPopayan> = mutableListOf()
     private lateinit var recycler:RecyclerView
+    private lateinit var db:FirebaseFirestore
+    private lateinit var am:AdaptadorMonumentosPopayan
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityMonumentosPopayanListadoBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        list.add(MonumentosVisitarPopayan("Planea Y disfruta Aquí","Calle del reloj: lugar de peregrinación desde la colonia, constituye un atractivo natural, religioso y gastronómico."))
-        list.add(MonumentosVisitarPopayan("Planea Y disfruta Aquí","La Ermita de Popayán: es una iglesia católica tipo ermita ubicada en el Centro histórico de Popayán sobre una parte de la Calle 5 (llamada antiguamente como Calle Real de las Catedrales o de La Ermita)."))
-        list.add(MonumentosVisitarPopayan("Planea Y disfruta Aquí","Palacio Arzobispal: El Palacio Arzobispal fue diseñado en estilo ecléctico neocolonial y neobarroco por Jesús María Plaza y construido entre 1930 y 1934. "))
-        list.add(MonumentosVisitarPopayan("Planea Y disfruta Aquí","Mirador el morro: El Morro del Tulcán o Pirámide de Tucán es el principal sitio arqueológico de Popayán. Este consiste en una pequeña loma no natural en forma de pirámide truncada."))
-        list.add(MonumentosVisitarPopayan("Planea Y disfruta Aquí","Teatro Municipal: Principal escenario de la cultura del Cauca declarado Monumento Nacional."))
-        list.add(MonumentosVisitarPopayan("Planea Y disfruta Aquí","Parque Caldas: Es uno de los sitios más antiguos de la ciudad, construido aproximadamente en el año 1537 como plaza de mercado el cual se ha transformado a través de los años."))
+        bindin=ActivityMonumentosPopayanListadoBinding.inflate(layoutInflater)
+        setContentView(bindin.root)
 
-        agregaradaptador()
-    }
+        val intent=Intent(this,DetalleMonumento::class.java)
+        db=FirebaseFirestore.getInstance();
+        db.collection("monumentospopayan").addSnapshotListener(object:EventListener<QuerySnapshot>{
+            override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
+                if (error!=null){
+                    println("Error en Firebase")
+                }
 
-    private fun agregaradaptador(){
 
-        recycler=binding.listapopa
+                for(mon:DocumentChange in value?.documentChanges!!){
+                    if(mon.type==DocumentChange.Type.ADDED){
+                        list.add(mon.document.toObject(MonumentosVisitarPopayan::class.java))
+                    }
+                }
+                am.notifyDataSetChanged()
+            }
+        })
+
+        recycler=bindin.listapopa
         recycler.layoutManager=LinearLayoutManager(this)
-        recycler.adapter=AdaptadorMonumentosPopayan(this,list)
+        recycler.setHasFixedSize(true)
+        list= mutableListOf()
+        am=AdaptadorMonumentosPopayan(this, list!!,object:ClickListener{
+            override fun OnClic(Vista: View, posicion: Int) {
+                Toast.makeText(applicationContext, list?.get(posicion)?.monumento, Toast.LENGTH_LONG).show()
+                val mon=list.get(posicion)?.monumento
+                val des=list.get(posicion)?.descripcion
+                val ima=list.get(posicion)?.imagen
+                intent.putExtra("m",mon)
+                intent.putExtra("d",des)
+                intent.putExtra("i",ima)
+                startActivity(intent)
+            }
+        })
+        recycler.adapter=am
     }
-
+    /*private fun agregaradaptador(){
+        recycler=bindin.listarecycler
+        recycler.layoutManager=LinearLayoutManager(this)
+        recycler.adapter=AdaptadorMonumento(this,listam)*/
 }
